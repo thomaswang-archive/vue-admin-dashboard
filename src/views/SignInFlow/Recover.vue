@@ -67,14 +67,6 @@ export default {
           alert("Error: " + error);
         });
     }
-  },
-  mounted() {
-    const params = this.$route.params;
-
-    if (params.userLoggedOut) {
-      this.hasText = true;
-      this.text = "You have logged out!";
-    }
   }
 };
 </script>
