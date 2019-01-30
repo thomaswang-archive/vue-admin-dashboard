@@ -3,7 +3,7 @@
     class="container"
     :class="{'light-background' : !isDarkMode, 'dark-background' : isDarkMode}"
   >
-    <div class="login">
+    <div class="request">
       <img src="@/assets/DCHQ.svg" v-show="isDarkMode">
       <img src="@/assets/DCHQ-dark.svg" v-show="!isDarkMode">
       <h4 :class="{'light-text' : isDarkMode, 'dark-text' : !isDarkMode}">Request Account</h4>
@@ -37,9 +37,7 @@ export default {
   data() {
     return {
       email: null,
-      password: null,
-      hasText: false,
-      text: ""
+      password: null
     };
   },
   computed: {
@@ -98,7 +96,7 @@ export default {
   min-height: 100vh;
 }
 
-.login {
+.request {
   width: 400px;
   text-align: center;
 }
