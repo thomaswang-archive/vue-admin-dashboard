@@ -49,8 +49,6 @@ Note: If you are importing this project instead of installing a new project from
 yarn
 ```
 
-<br>
-
 ## 🎓 Learning Vue.js
 
 The Design+Code Vue.js course lives [here](https://designcode.io/vue). Start learning by creating this Web App!
