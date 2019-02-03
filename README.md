@@ -19,9 +19,11 @@
 4. [Dark Mode Part 1](https://github.com/thomaswangio/vue-admin-dashboard/tree/a4ab92e0f5a6ad186d5a785c3f86228455651c4a)
 5. [Dark Mode Part 2](https://github.com/thomaswangio/vue-admin-dashboard/tree/f3366f209d1388ce73a51a7bf70056eb78d52de4)
 6. [Animations and Transitions](https://github.com/thomaswangio/vue-admin-dashboard/tree/ec9ac65ece01830d5d2060c610a210d3a2a71b3f)
-7. Accounts with Netlify and Slack API (**coming soon!**)
-8. Charts and Data Visualization (**coming soon!**)
-9. Database with Firestore: Connect your app to a database (**coming soon!**)
+7. [Accounts with Netlify](https://github.com/thomaswangio/vue-admin-dashboard/tree/5700810705c56fa8a4a8657cb00cee89a14d4ee3)
+8. [Accounts with Slack](https://github.com/thomaswangio/vue-admin-dashboard/tree/ea78a10cac69f8c3053c1f9fa8538c63143197e2)
+9. Charts and Data Visualization (**coming soon!**)
+10. Database with Firestore (**coming soon!**)
+11. Lambda Functions with Netlify (**coming soon!**)
 
 <br>
 
