@@ -21,7 +21,7 @@ export default {
     }, 3000);
   },
   props: {
-    text: ""
+    text: String
   }
 };
 </script>
