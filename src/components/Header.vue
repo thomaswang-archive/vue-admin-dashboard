@@ -1,10 +1,13 @@
 <template>
-  <div id="nav">
+  <div id="nav" :class="{'nav-light' : !isDarkMode, 'nav-dark' : isDarkMode}">
     <div class="nav-1">
       <img src="@/assets/DCHQ-small.svg">
       <router-link to="/" :class="{'light-nav' : !isDarkMode, 'dark-nav' : isDarkMode}">Home</router-link>
-      <router-link to="/manage">Manage Users</router-link>
-      <router-link to="/team">Team</router-link>
+      <router-link
+        to="/manage"
+        :class="{'light-nav' : !isDarkMode, 'dark-nav' : isDarkMode}"
+      >Manage Users</router-link>
+      <router-link to="/team" :class="{'light-nav' : !isDarkMode, 'dark-nav' : isDarkMode}">Team</router-link>
     </div>
     <a @click="onClick">
       Logout
@@ -44,12 +47,19 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.nav-light {
+  background: $white;
+}
+
+.nav-dark {
+  background: $super-dark-blue;
+}
+
 #nav {
   padding: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: $super-dark-blue;
   box-sizing: border-box;
   width: 100%;
   padding: 15px 15%;

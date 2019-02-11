@@ -3,24 +3,100 @@
     <Header/>
     <div class="container">
       <div class="spread">
-        <h1>Traffic Overview</h1>
-        <div class="toggle">
+        <h1 :class="{'dark' : !isDarkMode, 'light' : isDarkMode}">Traffic Overview</h1>
+        <div class="toggle" :class="{'light-box' : isDarkMode, 'dark-box' : !isDarkMode}">
           <div ref="days" class="days" @click="toggleDays">Days</div>
           <div ref="weeks" class="weeks" @click="toggleWeeks">Weeks</div>
           <div ref="months" class="months" @click="toggleMonths">Months</div>
         </div>
       </div>
+      <apexchart width="100%" type="area" :options="chartOptions" :series="series"></apexchart>
+      <iframe
+        v-if="isDarkMode"
+        width="600"
+        height="450"
+        src="https://datastudio.google.com/embed/reporting/12VV95wfJ9-kW8pskiGHrrl5_GlVD5xkJ/page/R8xh"
+        frameborder="0"
+        style="border:0"
+        allowfullscreen
+      ></iframe>
+      <iframe
+        v-if="!isDarkMode"
+        width="600"
+        height="450"
+        src="https://datastudio.google.com/embed/reporting/1OX46PfUsV3Ad20eNDTvnFOBbq3m57hK6/page/R8xh"
+        frameborder="0"
+        style="border:0"
+        allowfullscreen
+      ></iframe>
     </div>
   </div>
 </template>
 
 <script>
+import VueApexCharts from "vue-apexcharts";
 import Header from "@/components/Header.vue";
 
 export default {
   name: "home",
+  computed: {
+    isDarkMode() {
+      return this.$store.getters.isDarkMode;
+    }
+  },
   components: {
-    Header
+    Header,
+    apexchart: VueApexCharts
+  },
+  data() {
+    return {
+      chartOptions: {
+        colors: ["#14f1d9", "#7b42f6"],
+        legend: {
+          labels: {
+            colors: [this.$store.getters.isDarkMode ? "white" : "black"]
+          },
+          position: "top"
+        },
+        tooltip: {
+          theme: "dark"
+        },
+        grid: {
+          xaxis: {
+            lines: {
+              show: true
+            }
+          },
+          yaxis: {
+            lines: {
+              show: false
+            }
+          }
+        },
+        chart: {
+          id: "users"
+        },
+        xaxis: {
+          type: "datetime"
+        }
+      },
+      series: [
+        {
+          name: "active users",
+          data: [
+            [new Date("January 1, 2019"), 30],
+            [new Date("January 5, 2019"), 40]
+          ]
+        },
+        {
+          name: "new users",
+          data: [
+            [new Date("January 1, 2019"), 80],
+            [new Date("January 5, 2019"), 20]
+          ]
+        }
+      ]
+    };
   },
   methods: {
     toggleDays() {
@@ -79,8 +155,12 @@ export default {
   width: 100%;
 }
 
-h1 {
-  @include heading-3;
+h1.dark {
+  @include heading-3($black);
+}
+
+h1.light {
+  @include heading-3($white);
 }
 
 .toggle {
@@ -92,8 +172,6 @@ h1 {
   padding: 5px;
   display: flex;
   flex-wrap: nowrap;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.1);
 
   &:hover {
     cursor: pointer;
