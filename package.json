@@ -4,16 +4,10 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "start": "run-p start:**",
-    "start:app": "react-scripts start",
     "start:lambda": "netlify-lambda serve src/functions",
-    "build2": "run-p build:**",
-    "build:app": "react-scripts build",
     "build:lambda": "netlify-lambda build src/functions",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build:vue": "vue-cli-service build"
   },
   "dependencies": {
     "@firebase/app": "^0.3.8",
