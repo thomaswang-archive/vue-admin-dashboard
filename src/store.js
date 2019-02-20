@@ -26,11 +26,9 @@ const mutations = {
   toggleDarkMode(state) {
     if (state.isDarkMode === true) {
       state.isDarkMode = false;
-      document.body.style.background = "#f0f3f5";
       window.localStorage.setItem("isDarkMode", "false");
     } else {
       state.isDarkMode = true;
-      document.body.style.background = "#212c4f";
       window.localStorage.setItem("isDarkMode", "true");
     }
   }

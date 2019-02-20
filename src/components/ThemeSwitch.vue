@@ -34,6 +34,7 @@ export default {
   box-sizing: border-box;
   margin: 50px auto;
   display: flex;
+  cursor: pointer;
 }
 
 .light-toggle {
@@ -61,7 +62,7 @@ export default {
 }
 
 .toggle-right {
-  transform: translateX(90%);
+  transform: translateX(92%);
   background: #1b233f;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
