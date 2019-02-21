@@ -30,8 +30,7 @@
           placeholder="Subscription ID"
         >
         <button
-          style="margin: 0 0 0 25px"
-          class="button"
+          class="manage-button button"
           :disabled="!email && !subscriptionId"
         >Get Customer Details</button>
       </form>
@@ -158,8 +157,19 @@ p {
   display: flex;
   align-items: center;
   flex-direction: row;
-
   margin-top: 20px;
+  
+  @media all and (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+
+.manage-button {
+  margin: 0 0 0 25px
+  
+  @media all and (max-width: 767px) {
+    margin: 25px;
+  }
 }
 
 .line-break {
