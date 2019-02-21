@@ -76,12 +76,13 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-
   min-height: 100vh;
 }
 
 .recover {
   width: 400px;
   text-align: center;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 </style>
