@@ -8,7 +8,7 @@
     <div class="login">
       <img src="@/assets/DCHQ.svg" v-show="isDarkMode">
       <img src="@/assets/DCHQ-dark.svg" v-show="!isDarkMode">
-      <h4 :class="{'light-text' : isDarkMode, 'dark-text' : !isDarkMode}">Sign into Design+Code HQ</h4>
+      <h4 :class="{'light-text' : isDarkMode, 'dark-text' : !isDarkMode}">Sign into Design+Code HQ [DEMO]</h4>
       <form @submit.prevent="onSubmit">
         <input
           type="email"
