@@ -98,7 +98,7 @@ export default {
   },
   methods: {
     getUserData() {
-      let url = new URL("http://localhost:9000/hello");
+      let url = new URL("http://localhost:9000/getUserData");
 
       const data = {
         email: "test@designcode.io"
