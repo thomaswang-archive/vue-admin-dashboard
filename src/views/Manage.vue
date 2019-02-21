@@ -108,7 +108,7 @@ export default {
   },
   methods: {
     getUserData() {
-      let url = new URL("http://localhost:9000/getUserData");
+      let url = new URL("http://vue-hq.netlify.com/.netlify/functions/hello");
 
       const data = {
         email: this.email,
