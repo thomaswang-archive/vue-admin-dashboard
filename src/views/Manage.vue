@@ -131,6 +131,12 @@ export default {
           this.seated = data.seated;
           this.onTrial = data.onTrial;
           this.trialEndDate = data.trialEndDate;
+        }).catch(error => {
+          this.subscriptionState = "";
+          this.seated = "";
+          this.onTrial = "";
+          this.trialEndDate = "";
+          alert(error);
         });
     }
   }
