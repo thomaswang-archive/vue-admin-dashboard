@@ -75,6 +75,9 @@ export default {
     &.router-link-exact-active.light-nav {
       color: $middle-blue;
     }
+    @media all and (max-width: 767px) {
+      display: none;
+    }
   }
 
   a,
