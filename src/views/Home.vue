@@ -402,6 +402,12 @@ export default {
   margin-bottom: 60px;
 }
 
+.apexcharts-legend {
+  @media all and (max-width: 767px) {
+    display: none;
+  }
+}
+
 .gchart-container {
   display: flex;
   flex-direction: row;
