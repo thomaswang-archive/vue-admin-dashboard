@@ -403,5 +403,9 @@ export default {
   flex-direction: row;
   justify-content: space-evenly;
   padding-bottom: 120px;
+  
+  @media all and (max-width: 767px) {
+    flex-direction: column;
+  }
 }
 </style>
