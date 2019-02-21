@@ -106,9 +106,13 @@ export default {
 
       url.search = new URLSearchParams(data);
 
-      fetch(url).then(response => {
-        console.log(response);
-      });
+      fetch(url)
+        .then(response => {
+          return response.json();
+        })
+        .then(data => {
+          console.log(data);
+        });
     }
   }
 };
