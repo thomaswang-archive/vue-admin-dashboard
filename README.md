@@ -9,8 +9,6 @@
 
 [Vue.js](https://github.com/vuejs/vue) is a powerful, easy-to-use JavaScript framework that is component-based, just like React. This course will walk you through how to build a beautiful admin dashboard that you can use for your own data on the web. Create stunning charts, delightful animations, and powerful administrative commands. Full video tutorials: https://designcode.io/vue.
 
-<br>
-
 ## ⚡️ Course Downloads
 
 1. [Intro to Vue.js](https://github.com/thomaswangio/vue-admin-dashboard/tree/293b57a08ab745a3d42dfd99c098833541719772)
@@ -21,11 +19,9 @@
 6. [Animations and Transitions](https://github.com/thomaswangio/vue-admin-dashboard/tree/ec9ac65ece01830d5d2060c610a210d3a2a71b3f)
 7. [Accounts with Netlify](https://github.com/thomaswangio/vue-admin-dashboard/tree/5700810705c56fa8a4a8657cb00cee89a14d4ee3)
 8. [Accounts with Slack](https://github.com/thomaswangio/vue-admin-dashboard/tree/ea78a10cac69f8c3053c1f9fa8538c63143197e2)
-9. Charts and Data Visualization (**coming soon!**)
-10. Database with Firestore (**coming soon!**)
-11. Lambda Functions with Netlify (**coming soon!**)
-
-<br>
+9. [Charts and Data Visualization](https://github.com/thomaswangio/vue-admin-dashboard/tree/71d8bb1e0f8763222554d85ab7b14541cb9bcd60)
+10. [Database with Firestore](https://github.com/thomaswangio/vue-admin-dashboard/tree/bc61877bfda94bb112fd5afa362eb2d37275ab13)
+11. [Lambda Functions with Netlify](https://github.com/thomaswangio/vue-admin-dashboard/tree/0df2be6068f9160e90fa2a4d46011b1d7717597d)
 
 ## ⚙️ Install Yarn and Vue CLI
 
@@ -54,6 +50,10 @@ yarn
 The Design+Code Vue.js course lives [here](https://designcode.io/vue). Start learning by creating this Web App!
 
 Looking for more guidance? Full documentation for Vue is [on their website](https://vuejs.org/). To see the documentation for the Vue CLL, which was used to create and configure this project, go [here](https://cli.vuejs.org/guide/).
+
+## 👾 Demo
+
+Feel free to play around with the finished website at: https://vue-hq.netlify.com. The username is support@designcode.io and password is 123456789.
 
 ## 🚀 Deploy
 
