@@ -352,6 +352,10 @@ export default {
   justify-content: space-between;
   margin-top: 40px;
   width: 100%;
+  
+  @media all and (max-width: 767px) {
+    flex-direction: column;
+  }
 }
 
 .toggle {
@@ -405,7 +409,7 @@ export default {
   padding-bottom: 120px;
   
   @media all and (max-width: 767px) {
-    flex-direction: column;
+    display: none;
   }
 }
 </style>
