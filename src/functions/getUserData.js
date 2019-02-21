@@ -13,9 +13,21 @@ admin.initializeApp({
 
 
 exports.handler = function (event, context, callback) {
+    const { user } = context.clientContext;
+
+    // Do the user check here
+    // If not user, callback a status code of 401, meaning unauthorized
+
+    const { email, subscriptionId } = event.queryStringParameters;
+
+    console.log("Searched email: " + email);
+    console.log("Searched subscription ID: " + subscriptionId);
+
+    const searchQuery = email.length > 0 ? email : subscriptionId
+
     const firestore = admin.firestore();
 
-    firestore.collection('users').where('email', '==', 'test@designcode.io').limit(1).get().then(response => {
+    firestore.collection('users').where('email', '==', searchQuery).limit(1).get().then(response => {
         if (response.empty) { return Promise.reject() }
 
         const userInfo = response.docs[0].data()

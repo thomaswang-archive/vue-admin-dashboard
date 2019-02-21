@@ -8,6 +8,8 @@
       >Enter either customer email or subscription ID</p>
       <form @submit.prevent="getUserData" class="manage-container">
         <input
+          v-model="email"
+          :disabled="subscriptionId.length > 0"
           type="email"
           style="margin: 0"
           class="field"
@@ -19,13 +21,19 @@
           style="margin: 0 20px 0 20px"
         >or</p>
         <input
+          v-model="subscriptionId"
+          :disabled="email.length > 0"
           type="text"
           style="margin: 0"
           class="field"
           :class="{'light-field': isDarkMode, 'dark-field': !isDarkMode}"
           placeholder="Subscription ID"
         >
-        <button style="margin: 0 0 0 25px" class="button">Get Customer Details</button>
+        <button
+          style="margin: 0 0 0 25px"
+          class="button"
+          :disabled="!email && !subscriptionId"
+        >Get Customer Details</button>
       </form>
       <hr class="line-break">
       <h1 :class="{'dark' : !isDarkMode, 'light' : isDarkMode}">Customer Details</h1>
@@ -90,6 +98,8 @@ export default {
   },
   data() {
     return {
+      email: "",
+      subscriptionId: "",
       subscriptionState: "",
       seated: "",
       onTrial: "",
@@ -101,10 +111,16 @@ export default {
       let url = new URL("http://localhost:9000/getUserData");
 
       const data = {
-        email: "test@designcode.io"
+        email: this.email,
+        subscriptionId: this.subscriptionId
       };
 
       url.search = new URLSearchParams(data);
+
+      this.subscriptionState = "Loading...";
+      this.seated = "Loading...";
+      this.onTrial = "Loading...";
+      this.trialEndDate = "Loading...";
 
       fetch(url)
         .then(response => {
@@ -112,6 +128,10 @@ export default {
         })
         .then(data => {
           console.log(data);
+          this.subscriptionState = data.subscriptionStatus;
+          this.seated = data.seated;
+          this.onTrial = data.onTrial;
+          this.trialEndDate = data.trialEndDate;
         });
     }
   }
