@@ -165,7 +165,7 @@ p {
 }
 
 .manage-button {
-  margin: 0 0 0 25px
+  margin: 0 0 0 25px;
   
   @media all and (max-width: 767px) {
     margin: 25px;
