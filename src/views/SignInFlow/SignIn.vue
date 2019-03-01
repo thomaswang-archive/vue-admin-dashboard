@@ -106,8 +106,9 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-
   min-height: 100vh;
+  padding-top: 16px;
+  padding-bottom: 24px;
 }
 
 .login {
