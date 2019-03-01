@@ -22,6 +22,7 @@
     "vue": "^2.5.21",
     "vue-apexcharts": "^1.2.9",
     "vue-firestore": "^0.3.16",
+    "vue-github-buttons": "^3.0.1",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
   },
@@ -43,8 +44,7 @@
       "node": true
     },
     "extends": [
-      "plugin:vue/essential",
-      "@vue/prettier"
+      "plugin:vue/essential"
     ],
     "rules": {},
     "parserOptions": {

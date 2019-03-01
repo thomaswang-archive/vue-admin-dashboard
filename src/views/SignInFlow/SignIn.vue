@@ -8,7 +8,9 @@
     <div class="login">
       <img src="@/assets/DCHQ.svg" v-show="isDarkMode">
       <img src="@/assets/DCHQ-dark.svg" v-show="!isDarkMode">
-      <h4 :class="{'light-text' : isDarkMode, 'dark-text' : !isDarkMode}">Sign into Design+Code HQ [DEMO]</h4>
+      <h4
+        :class="{'light-text' : isDarkMode, 'dark-text' : !isDarkMode}"
+      >Sign into Design+Code HQ [DEMO]</h4>
       <form @submit.prevent="onSubmit">
         <input
           type="email"
@@ -31,6 +33,10 @@
         :class="{'light-link': isDarkMode, 'dark-link' : !isDarkMode}"
       >Forgot your password?</router-link>
       <ThemeSwitch/>
+      <div class="github-container">
+        <gh-btns-star slug="thomaswangio/vue-admin-dashboard" show-count/>
+        <gh-btns-fork slug="thomaswangio/vue-admin-dashboard" show-count/>
+      </div>
     </div>
   </div>
 </template>
@@ -109,5 +115,11 @@ export default {
   text-align: center;
   margin-left: 16px;
   margin-right: 16px;
+}
+
+.github-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 </style>

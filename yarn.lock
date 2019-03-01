@@ -4384,6 +4384,11 @@ form-data@~2.3.2:
     combined-stream "^1.0.6"
     mime-types "^2.1.12"
 
+format-thousands@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/format-thousands/-/format-thousands-1.1.1.tgz#7975bee30338d9006390da5831db0b41c323fbfa"
+  integrity sha1-eXW+4wM42QBjkNpYMdsLQcMj+/o=
+
 forwarded@~0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/forwarded/-/forwarded-0.1.2.tgz#98c23dab1175657b8c0573e8ceccd91b0ff18c84"
@@ -9223,7 +9228,7 @@ tslib@1.9.0:
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.9.0.tgz#e37a86fda8cbbaf23a057f473c9f4dc64e5fc2e8"
   integrity sha512-f/qGG2tUkrISBlQZEjEqoZ3B2+npJjIf04H1wuAv9iA8i04Icp+61KRXxFdha22670NJopsZCIjhC3SnjPRKrQ==
 
-tslib@^1.9.0:
+tslib@^1.9.0, tslib@^1.9.3:
   version "1.9.3"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.9.3.tgz#d7e4dd79245d85428c4d7e4822a79917954ca286"
   integrity sha512-4krF8scpejhaOgqzBEcGM7yDIEfi0/8+8zDRZhNZZ2kjmHJ4hv3zCbQWxoJGz1iw5U0Jl0nma13xzHXcncMavQ==
@@ -9534,6 +9539,14 @@ vue-firestore@^0.3.16:
   version "0.3.16"
   resolved "https://registry.yarnpkg.com/vue-firestore/-/vue-firestore-0.3.16.tgz#c5b53b3c05f1a8013c3d6f0853130af7cbdffbf4"
   integrity sha512-Y92Q5Pf/rXaQdSCDKKVlo+PVYuLsTj2pTAVpeGPWUuo1e+ZxSw+Q6u0n56Rrt/OlTDMLGZdKHapW8uzwVZ/rjw==
+
+vue-github-buttons@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/vue-github-buttons/-/vue-github-buttons-3.0.1.tgz#61f61bcb452746aac25497c21d90c6610de04e3c"
+  integrity sha512-ZVSLV1zASqzczgK8+ktKkBl+0pr4flrk/eDkm1gHXXNsE79Y2C7V463D3nQwc3kC2/mpqScpUVIfFKcCgrJpxQ==
+  dependencies:
+    format-thousands "^1.1.1"
+    tslib "^1.9.3"
 
 vue-hot-reload-api@^2.3.0:
   version "2.3.2"
