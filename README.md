@@ -60,3 +60,9 @@ Feel free to play around with the finished website at: https://vue-hq.netlify.co
 Launch this site to Netlify by clicking below! Or go to [Netlify](https://www.netlify.com/) to deploy your own project.
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/thomaswangio/vue-admin-dashboard)
+
+## Q&A and Issues
+
+Feel free to [ask any questions or note issues](https://github.com/thomaswangio/vue-admin-dashboard/issues/new)!
+
+- [Fixing dark and light text](https://github.com/thomaswangio/vue-admin-dashboard/issues/2)
