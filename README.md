@@ -61,7 +61,7 @@ Launch this site to Netlify by clicking below! Or go to [Netlify](https://www.ne
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/thomaswangio/vue-admin-dashboard)
 
-## Q&A and Issues
+## 💭 Q&A and Issues
 
 Feel free to [ask any questions or note issues](https://github.com/thomaswangio/vue-admin-dashboard/issues/new)!
 
