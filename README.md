@@ -31,6 +31,12 @@ Make sure that you have the [Yarn](https://yarnpkg.com/en/) installed, then inst
 yarn global add @vue/cli
 ```
 
+If you have trouble with getting this project to run, please run a stable version of `@vue/cli`:
+
+```sh
+yarn global add @vue/cli@3.5.1
+```
+
 ## ✏️ Manage your Project from the Vue CLI GUI
 
 After installing the Vue CLI, you can open the Vue Project Manager by using the following command:
@@ -43,6 +49,12 @@ Note: If you are importing this project instead of installing a new project from
 
 ```sh
 yarn
+```
+
+Then you can run the project with:
+
+```sh
+yarn serve
 ```
 
 ## 🎓 Learning Vue.js
