@@ -31,10 +31,10 @@ Make sure that you have the [Yarn](https://yarnpkg.com/en/) installed, then inst
 yarn global add @vue/cli
 ```
 
-If you have trouble with getting this project to run, please run a stable version of `@vue/cli`:
+If you have trouble with getting this project to run, please run the version of `@vue/cli` used in the course:
 
 ```sh
-yarn global add @vue/cli@3.5.1
+yarn global add @vue/cli@3.3.0
 ```
 
 ## ✏️ Manage your Project from the Vue CLI GUI
