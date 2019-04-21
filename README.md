@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://designcode.io/vue">
-    <img alt="Vue.js" src="https://www.dropbox.com/s/g2ifxdqqx49awc5/cover.png?raw=1"/>
+    <img alt="Vue.js" src="./cover.png"/>
   </a>
 </p>
 <h1 align="center">
