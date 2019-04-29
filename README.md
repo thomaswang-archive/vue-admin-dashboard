@@ -78,3 +78,4 @@ Launch this site to Netlify by clicking below! Or go to [Netlify](https://www.ne
 Feel free to [ask any questions or note issues](https://github.com/thomaswangio/vue-admin-dashboard/issues/new)!
 
 - [Fixing dark and light text](https://github.com/thomaswangio/vue-admin-dashboard/issues/2)
+- [Using rem units instead of px](https://github.com/thomaswangio/vue-admin-dashboard/issues/3)
