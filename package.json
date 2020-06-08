@@ -10,7 +10,7 @@
     "build:vue": "vue-cli-service build"
   },
   "dependencies": {
-    "@firebase/app": "^0.3.8",
+    "@firebase/app": "^0.6.5",
     "@firebase/firestore": "^1.0.2",
     "@netlify/zip-it-and-ship-it": "^0.2.0",
     "animate.css": "^3.7.0",
