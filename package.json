@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@firebase/app": "^0.6.5",
-    "@firebase/firestore": "^1.0.2",
+    "@firebase/firestore": "^1.15.0",
     "@netlify/zip-it-and-ship-it": "^0.2.0",
     "animate.css": "^3.7.0",
     "apexcharts": "^3.2.2",
