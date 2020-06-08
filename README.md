@@ -65,13 +65,13 @@ Looking for more guidance? Full documentation for Vue is [on their website](http
 
 ## 👾 Demo
 
-Feel free to play around with the finished website at: https://vue-hq.netlify.com. The username is `support@designcode.io` and password is `123456789`.
+Feel free to play around with the finished website at: https://vue-hq.netlify.app. The username is `support@designcode.io` and password is `123456789`.
 
 ## 🚀 Deploy
 
-Launch this site to Netlify by clicking below! Or go to [Netlify](https://www.netlify.com/) to deploy your own project.
+Launch this site to Netlify by clicking below! Or go to [Netlify](https://www.netlify.app/) to deploy your own project.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/thomaswangio/vue-admin-dashboard)
+[![Deploy to Netlify](https://www.netlify.app/img/deploy/button.svg)](https://app.netlify.app/start/deploy?repository=https://github.com/thomaswangio/vue-admin-dashboard)
 
 ## 💭 Q&A and Issues
 

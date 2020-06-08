@@ -1,6 +1,6 @@
 <template>
   <div class="manage">
-    <Header/>
+    <Header />
     <div class="container">
       <h1 :class="{'dark' : !isDarkMode, 'light' : isDarkMode}">Manage Users</h1>
       <p
@@ -15,7 +15,7 @@
           class="field"
           :class="{'light-field': isDarkMode, 'dark-field': !isDarkMode}"
           placeholder="Customer Email"
-        >
+        />
         <p
           :class="{'light-text': isDarkMode, 'dark-text': !isDarkMode}"
           style="margin: 0 20px 0 20px"
@@ -28,13 +28,13 @@
           class="field"
           :class="{'light-field': isDarkMode, 'dark-field': !isDarkMode}"
           placeholder="Subscription ID"
-        >
+        />
         <button
           class="manage-button button"
           :disabled="!email && !subscriptionId"
         >Get Customer Details</button>
       </form>
-      <hr class="line-break">
+      <hr class="line-break" />
       <h1 :class="{'dark' : !isDarkMode, 'light' : isDarkMode}">Customer Details</h1>
       <div class="details-container">
         <div class="detail">
@@ -107,7 +107,7 @@ export default {
   },
   methods: {
     getUserData() {
-      let url = new URL("http://vue-hq.netlify.com/.netlify/functions/hello");
+      let url = new URL("http://vue-hq.netlify.app/.netlify/functions/hello");
 
       const data = {
         email: this.email,
@@ -131,7 +131,8 @@ export default {
           this.seated = data.seated;
           this.onTrial = data.onTrial;
           this.trialEndDate = data.trialEndDate;
-        }).catch(error => {
+        })
+        .catch(error => {
           this.subscriptionState = "";
           this.seated = "";
           this.onTrial = "";
@@ -164,7 +165,7 @@ p {
   align-items: center;
   flex-direction: row;
   margin-top: 20px;
-  
+
   @media all and (max-width: 767px) {
     flex-direction: column;
   }
@@ -172,7 +173,7 @@ p {
 
 .manage-button {
   margin: 0 0 0 25px;
-  
+
   @media all and (max-width: 767px) {
     margin: 25px;
   }

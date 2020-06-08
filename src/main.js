@@ -15,9 +15,9 @@ netlifyIdentityWidget.init();
 
 // Initialize GoTrue JS for Netlify
 export const auth = new GoTrue({
-  APIUrl: "https://vue-hq.netlify.com/.netlify/identity",
-  setCookie: true
-})
+  APIUrl: "https://vue-hq.netlify.app/.netlify/identity",
+  setCookie: true,
+});
 
 // Initialize Vue Firestore
 Vue.use(VueFirestore);
@@ -28,5 +28,5 @@ Vue.use(VueGitHubButtons);
 new Vue({
   router,
   store,
-  render: h => h(App)
+  render: (h) => h(App),
 }).$mount("#app");
