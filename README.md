@@ -65,7 +65,7 @@ Looking for more guidance? Full documentation for Vue is [on their website](http
 
 ## 👾 Demo
 
-Feel free to play around with the finished website at: https://vue-hq.netlify.app. The username is `support@designcode.io` and password is `123456789`.
+Feel free to play around with the finished website at: https://vue-hq-2.netlify.app. The username is `support@designcode.io` and password is `123456789`.
 
 ## 🚀 Deploy
 
